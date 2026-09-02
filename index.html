@@ -4,21 +4,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>U.S. Documents Abroad &amp; Digital Identity Updates</title>
-<meta content="Curated iRemoteNotary and NIST updates on U.S. documents signed abroad, remote online notarization, digital credentials, and identity standards." name="description"/>
+<title>U.S. Documents Abroad | Notary, Consular &amp; Authentication Resources</title>
+<meta content="Educational resources from iRemoteNotary on U.S. documents signed or used abroad, remote online notarization, consular and notarial alternatives, apostille and authentication, and recipient-acceptance checks." name="description"/>
 <link href="https://iremotenotary1.github.io/us-documents-abroad-authority/" rel="canonical"/>
 <meta content="index,follow" name="robots"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <!-- Open Graph -->
 <meta content="website" property="og:type"/>
 <meta content="U.S. Documents Abroad Authority" property="og:site_name"/>
-<meta content="U.S. Documents Abroad &amp; Digital Identity Updates" property="og:title"/>
-<meta content="Curated iRemoteNotary and NIST updates on U.S. documents signed abroad, remote online notarization, digital credentials, and identity standards." property="og:description"/>
+<meta content="U.S. Documents Abroad | Notary, Consular &amp; Authentication Resources" property="og:title"/>
+<meta content="Educational resources from iRemoteNotary on U.S. documents signed or used abroad, remote online notarization, consular and notarial alternatives, apostille and authentication, and recipient-acceptance checks." property="og:description"/>
 <meta content="https://iremotenotary1.github.io/us-documents-abroad-authority/" property="og:url"/>
 <meta content="https://iremotenotary1.github.io/us-documents-abroad-authority/og-image.png" property="og:image"/>
 <!-- Twitter -->
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="U.S. Documents Abroad &amp; Digital Identity Updates" name="twitter:title"/>
-<meta content="Curated iRemoteNotary and NIST updates on U.S. documents signed abroad, remote online notarization, digital credentials, and identity standards." name="twitter:description"/>
+<meta content="U.S. Documents Abroad | Notary, Consular &amp; Authentication Resources" name="twitter:title"/>
+<meta content="Educational resources from iRemoteNotary on U.S. documents signed or used abroad, remote online notarization, consular and notarial alternatives, apostille and authentication, and recipient-acceptance checks." name="twitter:description"/>
 <meta content="https://iremotenotary1.github.io/us-documents-abroad-authority/og-image.png" name="twitter:image"/>
 <script type="application/ld+json">
 {
@@ -42,8 +43,8 @@
     {
       "@type": "CollectionPage",
       "@id": "https://iremotenotary1.github.io/us-documents-abroad-authority/#webpage",
-      "name": "U.S. Documents Abroad & Digital Identity Updates",
-      "description": "Curated iRemoteNotary and NIST updates on U.S. documents signed abroad, remote online notarization, digital credentials, and identity standards.",
+      "name": "U.S. Documents Abroad | Notary, Consular & Authentication Resources",
+      "description": "Educational resources from iRemoteNotary on U.S. documents signed or used abroad, remote online notarization, consular and notarial alternatives, apostille and authentication, and recipient-acceptance checks.",
       "url": "https://iremotenotary1.github.io/us-documents-abroad-authority/",
       "isPartOf": {
         "@id": "https://iremotenotary1.github.io/us-documents-abroad-authority/#website"
@@ -52,10 +53,10 @@
         "@id": "https://www.iremotenotary.com/#organization"
       },
       "about": [
-        "remote online notarization",
         "U.S. documents signed abroad",
-        "digital identity",
-        "digital credentials"
+        "remote online notarization",
+        "apostille and authentication",
+        "consular notarization"
       ]
     }
   ]
@@ -76,18 +77,30 @@
   img{max-width:100%;height:auto}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
+  .skip{
+    position:absolute;left:12px;top:12px;z-index:30;
+    transform:translateY(-180%);
+    background:#fff;color:var(--ink);font-weight:700;
+    padding:10px 14px;border-radius:8px;border:2px solid var(--accent);
+  }
+  .skip:focus,.skip:focus-visible{transform:none}
+  a:focus-visible,.button-link:focus-visible,.nav a:focus-visible{
+    outline:3px solid var(--accent);outline-offset:3px;
+  }
+
   .site-header{border-bottom:1px solid var(--line);background:var(--bg)}
-  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+  .site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 16px;padding-top:18px;padding-bottom:18px}
   .brand{font-weight:800;font-size:20px;color:var(--ink);letter-spacing:-.01em}
   .brand b{color:var(--accent)}
-  .nav a{margin-left:18px;font-weight:600;color:var(--muted)}
+  .nav{display:flex;flex-wrap:wrap;align-items:center;gap:0 4px}
+  .nav a{margin-left:18px;font-weight:600;color:var(--muted);display:inline-flex;align-items:center;min-height:44px;padding:8px 2px}
   .nav a:hover{color:var(--accent)}
 
   .hero{padding:40px 0 8px}
-  .hero h1{font-size:34px;line-height:1.15;margin:.1em 0 .35em;letter-spacing:-.02em}
+  .hero h1{font-size:34px;line-height:1.15;margin:.1em 0 .35em;letter-spacing:-.02em;overflow-wrap:anywhere}
   .hero .lead{font-size:19px;color:var(--muted);max-width:62ch;margin:0}
   .kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-          color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,white);padding:4px 10px;border-radius:999px}
+          color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,white);padding:4px 10px;border-radius:999px;max-width:100%;overflow-wrap:anywhere}
 
   .section{padding:26px 0}
   .section h2{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
@@ -108,7 +121,8 @@
 
   @media (max-width:720px){
     .hero h1{font-size:27px}
-    .nav a{margin-left:12px}
+    .nav{width:100%}
+    .nav a{margin-left:0;margin-right:16px}
   }
 </style>
 <style>
@@ -123,12 +137,21 @@
   .cta-panel h2{margin:0 0 6px;font-size:22px}
   .cta-panel p{margin:0 0 14px;color:var(--muted)}
   .cta-actions{display:flex;flex-wrap:wrap;gap:10px}
-  .button-link{display:inline-block;padding:10px 14px;border-radius:9px;background:var(--accent);color:#fff;font-weight:750}
+  .button-link{display:inline-block;padding:10px 14px;border-radius:9px;background:var(--accent);color:#fff;font-weight:700;min-height:44px}
   .button-link:hover{color:#fff;text-decoration:none;filter:brightness(.94)}
   .button-link.secondary{background:#fff;color:var(--accent);border:1px solid var(--accent)}
   .button-link.secondary:hover{color:var(--accent)}
+  .briefs{display:grid;gap:0;border-top:1px solid var(--line);margin:8px 0 10px}
+  .brief{display:grid;grid-template-columns:3.2rem 1fr;gap:12px 16px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .brief .idx{font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--accent);padding-top:4px}
+  .brief h3{font-size:20px;margin:0 0 6px;letter-spacing:-.01em}
+  .brief p{margin:0;color:var(--muted);max-width:70ch}
+  @media (max-width:720px){
+    .brief{grid-template-columns:1fr;gap:4px}
+  }
 </style></head>
 <body>
+<a class="skip" href="#main-content">Skip to content</a>
 <header class="site-header">
 <div class="wrap">
 <a class="brand" href="./">U.S. Documents Abroad Authority<span class="brand-by">by iRemoteNotary</span></a>
@@ -139,19 +162,55 @@
 </nav>
 </div>
 </header>
-<main class="wrap">
+<main class="wrap" id="main-content">
 <section class="hero">
-<span class="kicker">U.S. documents notarized abroad and digital identity</span>
-<h1>U.S. Documents Abroad: Online Notarization and Digital Identity Updates</h1>
-<p class="lead">This iRemoteNotary educational resource curates selected updates about U.S. documents completed while a signer is abroad, remote online notarization, and evolving digital identity standards. It combines practical iRemoteNotary guidance with public information from recognized standards organizations to help readers understand available processes and prepare for document-specific requirements.</p>
-</section><div class="publisher-note">Published by <a href="https://www.iremotenotary.com/about?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=feedwalls_authority_content&amp;utm_content=us_documents_abroad_authority" rel="noopener noreferrer" target="_blank">iRemoteNotary</a>, a nationwide and international online-notary service platform. External standards content is included for education and does not imply endorsement.</div>
+<span class="kicker">Notary, consular, and authentication resources</span>
+<h1>U.S. documents abroad: notarization, consular options, and authentication</h1>
+<p class="lead">This iRemoteNotary educational resource collects selected guidance and public sources about U.S. documents signed or used while a person is outside the United States. It covers remote online notarization, consular and notarial alternatives, apostille and authentication, and the practical need to confirm what the receiving party will accept.</p>
+</section>
+<div class="publisher-note">Published by <a href="https://www.iremotenotary.com/about?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=us_documents_abroad_authority&amp;utm_content=publisher_note" rel="noopener noreferrer" target="_blank">iRemoteNotary</a>, a nationwide and international online-notary service platform. External standards content is included for education and does not imply endorsement.</div>
 <section class="section prose">
 <p>This resource provides general educational information and is not legal advice. Requirements may vary by document, receiving organization, government agency, recording office, lender, title company, or foreign authority. Confirm identification, witness, acceptance, apostille, authentication, and recording requirements directly with the organization that will receive the document. Inclusion of an outside source does not imply that the source endorses iRemoteNotary.</p>
 </section>
-<section aria-labelledby="service-help-heading" class="cta-panel"><h2 id="service-help-heading">Need a U.S. document notarized while abroad?</h2><p>Review the international notarization process, identification preparation, and document-specific limitations before starting a session.</p><div class="cta-actions"><a class="button-link" href="https://www.iremotenotary.com/resources/international-notary-guides/notarizing-us-documents-abroad-guide?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=feedwalls_authority_content&amp;utm_content=us_documents_abroad_authority" rel="noopener noreferrer" target="_blank">Read the Documents-Abroad Guide</a><a class="button-link secondary" href="https://www.iremotenotary.com/international-online-notary?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=feedwalls_authority_content&amp;utm_content=us_documents_abroad_authority" rel="noopener noreferrer" target="_blank">Explore International Notary Services</a></div></section><section class="section focus-main">
+<section aria-labelledby="topic-heading" class="section">
+<h2 id="topic-heading">What this resource covers</h2>
+<p class="sub">Short orientation before the live feed. Full guides remain on the main iRemoteNotary website.</p>
+<div class="briefs">
+<article class="brief">
+<div class="idx">01</div>
+<div>
+<h3>U.S. documents while abroad</h3>
+<p>People outside the United States are often asked to complete U.S.-related affidavits, powers of attorney, passport-consent forms, company records, estate papers, proof-of-life or life-certificate forms, and similar documents. The required notarial act, witnesses, and return method depend on the document and on the party that will receive it.</p>
+</div>
+</article>
+<article class="brief">
+<div class="idx">02</div>
+<div>
+<h3>Notarization is not apostille or authentication</h3>
+<p>A notarization records a notarial act on a signature, oath, or similar request. An apostille or authentication is a separate government certification used in some cross-border filings. Completing a remote online notarization does not mean the document qualifies for apostille, authentication, or use before a foreign authority.</p>
+</div>
+</article>
+<article class="brief">
+<div class="idx">03</div>
+<div>
+<h3>Recipient acceptance controls the path</h3>
+<p>An attorney, title company, lender, court, agency, financial institution, or foreign authority may require a specific format, an in-person appearance, an original wet-ink paper, a consular act, or additional legalization. Confirm those instructions before booking. iRemoteNotary does not determine legal validity and does not guarantee that a completed session will be accepted, recorded, or legalized.</p>
+</div>
+</article>
+<article class="brief">
+<div class="idx">04</div>
+<div>
+<h3>International signer preparation</h3>
+<p>On supported platforms, iRemoteNotary’s international workflow is biometrics-first. Signers should have a supported government-issued identity document available for credential analysis and biometric identity verification. Knowledge-based authentication is not the normal international workflow. Not every credential, device, or location is accepted on every platform.</p>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="service-help-heading" class="cta-panel"><h2 id="service-help-heading">Need a U.S. document notarized while abroad?</h2><p>Review the international notarization process, biometrics-first identity verification on supported platforms, and document-specific limitations before starting a session.</p><div class="cta-actions"><a class="button-link" href="https://www.iremotenotary.com/resources/international-notary-guides/notarizing-us-documents-abroad-guide?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=us_documents_abroad_authority&amp;utm_content=documents_abroad_guide" rel="noopener noreferrer" target="_blank">Read the Documents-Abroad Guide</a><a class="button-link secondary" href="https://www.iremotenotary.com/international-online-notary?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=us_documents_abroad_authority&amp;utm_content=international_notary" rel="noopener noreferrer" target="_blank">Explore International Notary Services</a></div></section>
+<section class="section focus-main">
 <h2>Latest</h2>
-<p class="sub">Curated updates on online notarization and digital identity, refreshed automatically.</p>
-<div class="feed-card"><iframe id="feedwalls-widget" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://feedwalls.online/app/titles_description.php?groupID=95969447&amp;displayItems=10&amp;skin=list&amp;accent=%231a73e8&amp;dark=0&amp;radius=8&amp;compact=0" style="border:0;width:100%;min-height:560px;height:560px" title="U.S. Documents Abroad — Notary &amp; Digital Identity Updates"></iframe><script>window.addEventListener("message",function(event){if(event.origin!=="https://feedwalls.online")return;var data=event.data;if(!data||data.type!=="feedwalls:height")return;var frame=document.getElementById("feedwalls-widget");var height=Number(data.h);if(frame&&Number.isFinite(height)){frame.style.height=Math.max(560,height)+"px";}});</script><noscript>This live feed requires JavaScript. Use the iRemoteNotary documents-abroad guide and NIST Cybersecurity Insights links above to access the source material.</noscript></div>
+<p class="sub">Curated authority sources and iRemoteNotary international guides, refreshed automatically.</p>
+<div class="feed-card"><iframe id="feedwalls-widget" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://feedwalls.online/app/titles_description.php?groupID=95969447&amp;displayItems=15&amp;skin=list&amp;accent=%231a73e8&amp;dark=auto&amp;radius=8" style="border:0;width:100%;min-height:560px;height:560px" title="U.S. Documents Abroad — notary, consular, and authentication resources"></iframe><script>window.addEventListener("message",function(event){if(event.origin!=="https://feedwalls.online")return;var data=event.data;if(!data||data.type!=="feedwalls:height")return;var frame=document.getElementById("feedwalls-widget");var height=Number(data.h);if(frame&&Number.isFinite(height)){frame.style.height=Math.max(560,height)+"px";}});</script><noscript>This live feed requires JavaScript. Use the iRemoteNotary documents-abroad guide above to access related source material.</noscript></div>
 </section>
 </main>
 <footer class="site-footer">

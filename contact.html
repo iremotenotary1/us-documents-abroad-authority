@@ -20,6 +20,7 @@
 <meta content="Contact — U.S. Documents Abroad Authority" name="twitter:title"/>
 <meta content="Contact iRemoteNotary about the U.S. Documents Abroad Authority educational resource." name="twitter:description"/>
 <meta content="https://iremotenotary1.github.io/us-documents-abroad-authority/og-image.png" name="twitter:image"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -71,17 +72,28 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
   .site-header{border-bottom:1px solid var(--line);background:var(--bg)}
-  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+  .site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 16px;padding-top:18px;padding-bottom:18px}
   .brand{font-weight:800;font-size:20px;color:var(--ink);letter-spacing:-.01em}
   .brand b{color:var(--accent)}
-  .nav a{margin-left:18px;font-weight:600;color:var(--muted)}
+  .skip{
+    position:absolute;left:12px;top:12px;z-index:30;
+    transform:translateY(-180%);
+    background:#fff;color:var(--ink);font-weight:700;
+    padding:10px 14px;border-radius:8px;border:2px solid var(--accent);
+  }
+  .skip:focus,.skip:focus-visible{transform:none}
+  a:focus-visible,.button-link:focus-visible,.nav a:focus-visible{
+    outline:3px solid var(--accent);outline-offset:3px;
+  }
+  .nav{display:flex;flex-wrap:wrap;align-items:center;gap:0 4px}
+  .nav a{margin-left:18px;font-weight:600;color:var(--muted);display:inline-flex;align-items:center;min-height:44px;padding:8px 2px}
   .nav a:hover{color:var(--accent)}
 
   .hero{padding:40px 0 8px}
-  .hero h1{font-size:34px;line-height:1.15;margin:.1em 0 .35em;letter-spacing:-.02em}
+  .hero h1{font-size:34px;line-height:1.15;margin:.1em 0 .35em;letter-spacing:-.02em;overflow-wrap:anywhere}
   .hero .lead{font-size:19px;color:var(--muted);max-width:62ch;margin:0}
   .kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-          color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,white);padding:4px 10px;border-radius:999px}
+          color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,white);padding:4px 10px;border-radius:999px;max-width:100%;overflow-wrap:anywhere}
 
   .section{padding:26px 0}
   .section h2{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
@@ -102,7 +114,8 @@
 
   @media (max-width:720px){
     .hero h1{font-size:27px}
-    .nav a{margin-left:12px}
+    .nav{width:100%}
+    .nav a{margin-left:0;margin-right:16px}
   }
 </style>
 <style>
@@ -113,12 +126,13 @@
   .cta-panel h2{margin:0 0 6px;font-size:22px}
   .cta-panel p{margin:0 0 14px;color:var(--muted)}
   .cta-actions{display:flex;flex-wrap:wrap;gap:10px}
-  .button-link{display:inline-block;padding:10px 14px;border-radius:9px;background:var(--accent);color:#fff;font-weight:750}
+  .button-link{display:inline-block;padding:10px 14px;border-radius:9px;background:var(--accent);color:#fff;font-weight:700;min-height:44px}
   .button-link:hover{color:#fff;text-decoration:none;filter:brightness(.94)}
   .button-link.secondary{background:#fff;color:var(--accent);border:1px solid var(--accent)}
   .button-link.secondary:hover{color:var(--accent)}
 </style></head>
 <body>
+<a class="skip" href="#main-content">Skip to content</a>
 <header class="site-header">
 <div class="wrap">
 <a class="brand" href="./">U.S. Documents Abroad Authority<span class="brand-by">by iRemoteNotary</span></a>
@@ -129,13 +143,13 @@
 </nav>
 </div>
 </header>
-<main class="wrap">
+<main class="wrap" id="main-content">
 <section class="hero">
 <span class="kicker">Get in touch</span>
 <h1>Contact U.S. Documents Abroad Authority</h1>
 <p class="lead">Contact iRemoteNotary about this educational resource or online-notary services.</p>
 </section>
-<section class="section prose"><p>U.S. Documents Abroad Authority is published by iRemoteNotary. Use the links below for resource feedback or to learn about online notarization for eligible U.S. documents.</p><h2>Resource feedback</h2><p>Email <a href="mailto:contact@iremotenotary.com">contact@iremotenotary.com</a> with corrections, source suggestions, or feedback about this resource.</p><h2>Online-notary services</h2><p>For service information, eligibility, pricing, and session preparation, visit iRemoteNotary’s international online-notary page.</p><a class="button-link" href="https://www.iremotenotary.com/international-online-notary?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=feedwalls_authority_content&amp;utm_content=us_documents_abroad_authority" rel="noopener noreferrer" target="_blank">Visit iRemoteNotary</a><p><em>Do not email identification documents, unsigned or signed documents, payment information, or other sensitive client information through the general contact address.</em></p></section>
+<section class="section prose"><p>U.S. Documents Abroad Authority is published by iRemoteNotary. Use the links below for resource feedback or to learn about online notarization for eligible U.S. documents.</p><h2>Resource feedback</h2><p>Email <a href="mailto:contact@iremotenotary.com">contact@iremotenotary.com</a> with corrections, source suggestions, or feedback about this resource.</p><h2>Online-notary services</h2><p>For service information, eligibility, pricing, and session preparation, visit iRemoteNotary’s international online-notary page.</p><a class="button-link" href="https://www.iremotenotary.com/international-online-notary?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=us_documents_abroad_authority&amp;utm_content=contact_international" rel="noopener noreferrer" target="_blank">Visit iRemoteNotary</a><p><em>Do not email identification documents, unsigned or signed documents, payment information, or other sensitive client information through the general contact address.</em></p></section>
 </main>
 <footer class="site-footer">
 <div class="wrap">
